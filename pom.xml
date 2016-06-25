@@ -8,7 +8,13 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
+		<!-- Charset dos arquivos -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<!-- Depenências -->
+		<version.springframework>4.1.6.RELEASE</version.springframework>
+		
+		<!-- Versão do java -->
 		<maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
@@ -20,6 +26,30 @@
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>7.0.68</version>
 			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${version.springframework}</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${version.springframework}</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${version.springframework}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${version.springframework}</version>
 		</dependency>
 
 	</dependencies>
