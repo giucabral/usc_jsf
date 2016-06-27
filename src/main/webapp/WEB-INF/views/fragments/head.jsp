@@ -1,22 +1,17 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-
-<%--
-PetClinic :: a Spring Framework demonstration
---%>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags --%>
+    <%-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --%>
 
-    <spring:url value="favicon.ico" var="favicon"/>
+    <spring:url value="/favicon.ico" var="favicon"/>
     <link rel="shortcut icon" type="image/x-icon" href="${favicon}">
 
     <title></title>
 
     <spring:url value="/vendors/bootstrap/css/bootstrap.min.css" var="bootstrapCss"/>
-    <link href="${jQueryUiDatePickerCss}" rel="stylesheet"/>
+    <link href="${bootstrapCss}" rel="stylesheet"/>
 
     <spring:url value="/resources/css/application.css" var="applicationCss"/>
     <link href="${applicationCss}" rel="stylesheet"/>
