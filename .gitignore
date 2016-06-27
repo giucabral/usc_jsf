@@ -9,7 +9,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
-.gitignore
-src/main/java/
-src/main/resources/
